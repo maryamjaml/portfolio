@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anaya Restaurant | Premium Luxury Fine Dining</title>
+    
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="Experience high-end dining at Anaya Restaurant. Savor authentic culinary masterpieces crafted by professional chefs using fresh ingredients in a luxurious gold-black atmosphere.">
+    <meta name="keywords" content="Anaya Restaurant, Fine Dining, Luxury Restaurant, Steak, Pizza, BBQ, Reservation, Gold theme restaurant">
+    
+    <!-- FontAwesome & Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Luxury Loading Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">ANAYA <span>RESTAURANT</span></div>
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- 2. Sticky Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo" id="nav-logo">
+                ANAYA<span>RESTAURANT</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#why-choose-us" class="nav-link">Why Us</a></li>
+                <li><a href="#deals" class="nav-link">Deals</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-cta">
+                <a href="#reservation" class="btn-gold" id="navbar-book-btn">
+                    <i class="fa-regular fa-calendar-check"></i> Book Table
+                </a>
+            </div>
+            
+            <button class="menu-btn" id="menu-btn" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 3. Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content reveal-left">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-star"></i> Fine Dining Experience
+                </div>
+                <h1 class="hero-title">
+                    Savor the Art of
+                    <span>Luxury Gastronomy</span>
+                </h1>
+                <p class="hero-description">
+                    Welcome to Anaya Restaurant, where culinary masterpieces meet an ambiance of pure luxury. Experience gourmet creations crafted by award-winning chefs.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#reservation" class="btn-gold" id="hero-book-btn">Book A Table</a>
+                    <a href="#gallery" class="btn-outline-gold" id="hero-menu-btn">View Gallery</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-down" onclick="document.getElementById('why-choose-us').scrollIntoView();">
+            <span>Scroll Down</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- 4. Why Choose Us Section -->
+    <section id="why-choose-us" class="why-choose-us">
+        <div class="container">
+            <div class="section-title-wrapper reveal">
+                <span class="section-subtitle">Why Choose Us</span>
+                <h2 class="section-title">Our Premium Standards</h2>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Feature 1: Fresh Ingredients -->
+                <div class="feature-card glass-panel reveal delay-1">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-carrot"></i>
+                    </div>
+                    <h3 class="feature-title">Fresh Ingredients</h3>
+                    <p class="feature-desc">We source only the finest organic produce and premium cuts daily to ensure exceptional taste and freshness in every bite.</p>
+                </div>
+                
+                <!-- Feature 2: Professional Chefs -->
+                <div class="feature-card glass-panel reveal delay-2">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3 class="feature-title">Professional Chefs</h3>
+                    <p class="feature-desc">Our kitchen is led by award-winning master culinary artists who blend international techniques with local flair.</p>
+                </div>
+                
+                <!-- Feature 3: Fast Delivery -->
+                <div class="feature-card glass-panel reveal delay-3">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3 class="feature-title">Fast Delivery</h3>
+                    <p class="feature-desc">Craving luxury at home? Our premium hot-box delivery fleet guarantees restaurant-quality food delivered fresh and fast.</p>
+                </div>
+                
+                <!-- Feature 4: Hygienic Kitchen -->
+                <div class="feature-card glass-panel reveal delay-4">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="feature-title">Hygienic Kitchen</h3>
+                    <p class="feature-desc">We follow strict sanitation protocols and state-of-the-art cleanliness routines, maintaining a 5-star hygiene rating.</p>
+                </div>
+                
+                <!-- Feature 5: Affordable Prices -->
+                <div class="feature-card glass-panel reveal delay-5">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <h3 class="feature-title">Affordable Prices</h3>
+                    <p class="feature-desc">Experience royal dining at accessible price points. True culinary luxury shouldn't be out of reach.</p>
+                </div>
+                
+                <!-- Feature 6: Best Customer Service -->
+                <div class="feature-card glass-panel reveal delay-6">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <h3 class="feature-title">Best Customer Service</h3>
+                    <p class="feature-desc">Our dedicated waitstaff offers personalized hospitality, ensuring your dining experience is completely unforgettable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Special Deals Section -->
+    <section id="deals" class="special-deals">
+        <div class="container">
+            <div class="section-title-wrapper reveal">
+                <span class="section-subtitle">Promotional Offers</span>
+                <h2 class="section-title">Special Deals of the Week</h2>
+            </div>
+            
+            <div class="deals-grid">
+                <!-- Deal 1: Family Deal -->
+                <div class="deal-card reveal-left" style="--border-gold: rgba(212, 175, 55, 0.15)">
+                    <div class="deal-bg" style="background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80') no-repeat center center/cover;"></div>
+                    <span class="deal-badge">Popular</span>
+                    <div class="deal-content">
+                        <h3 class="deal-title">Luxury Family Platter</h3>
+                        <p class="deal-desc">A premium feast for 4! Includes a selection of gourmet steaks, wood-fired chicken, appetizers, and signature desserts.</p>
+                        <div class="deal-price-row">
+                            <span class="deal-price">Rs. 8,499 <span>Rs. 10,999</span></span>
+                            <a href="#reservation" class="btn-gold">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Deal 2: Buy 1 Get 1 Pizza -->
+                <div class="deal-card reveal-right">
+                    <div class="deal-bg" style="background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80') no-repeat center center/cover;"></div>
+                    <span class="deal-badge">Woodfired</span>
+                    <div class="deal-content">
+                        <h3 class="deal-title">Buy 1 Get 1 Pizza</h3>
+                        <p class="deal-desc">Buy any large premium sourdough pizza (Truffle Mushroom, Smokey BBQ, or Beef Pepperoni) and get a medium classic free.</p>
+                        <div class="deal-price-row">
+                            <span class="deal-price">From Rs. 2,199</span>
+                            <a href="#reservation" class="btn-gold">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Deal 3: Weekend Special -->
+                <div class="deal-card reveal-left">
+                    <div class="deal-bg" style="background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80') no-repeat center center/cover;"></div>
+                    <span class="deal-badge">Limited Time</span>
+                    <div class="deal-content">
+                        <h3 class="deal-title">Weekend BBQ Ribs Special</h3>
+                        <p class="deal-desc">Slow-smoked beef ribs glazed in signature house BBQ sauce, served with loaded golden wedges and garlic herb butter dip.</p>
+                        <div class="deal-price-row">
+                            <span class="deal-price">Rs. 3,850 <span>Rs. 4,500</span></span>
+                            <a href="#reservation" class="btn-gold">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Deal 4: Student Discount -->
+                <div class="deal-card reveal-right">
+                    <div class="deal-bg" style="background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80') no-repeat center center/cover;"></div>
+                    <span class="deal-badge">Student Deal</span>
+                    <div class="deal-content">
+                        <h3 class="deal-title">Flat 20% Off Student Combo</h3>
+                        <p class="deal-desc">Show your student ID to claim a premium Angus Beef burger or Crunchy Chicken sandwich combo with fries and gourmet shakes.</p>
+                        <div class="deal-price-row">
+                            <span class="deal-price">Flat 20% OFF</span>
+                            <a href="#reservation" class="btn-gold">Claim Deal</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-row">
+                <div class="about-col-img reveal-left">
+                    <div class="about-img-frame">
+                        <img class="about-img" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Anaya Restaurant Luxury Dining Setup">
+                        <div class="about-experience">
+                            <div class="exp-number">12+</div>
+                            <div class="exp-text">Years Of Excellence</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-col-content reveal-right">
+                    <span class="section-subtitle">Discover Our Legacy</span>
+                    <h2 class="about-title">Welcome to <span>Anaya Restaurant</span></h2>
+                    <p class="about-lead">Where culinary storytelling meets high-end luxury cuisine.</p>
+                    <p class="about-text">
+                        Founded in 2014, Anaya Restaurant began with a simple mission: to elevate traditional recipes with premium culinary techniques. Over the past decade, we have grown into an icon of luxury fine-dining, offering a family-friendly atmosphere that leaves every guest feeling pampered and satisfied.
+                    </p>
+                    
+                    <div class="about-bullets">
+                        <div class="bullet-item">
+                            <div class="bullet-icon"><i class="fa-solid fa-check"></i></div>
+                            <div class="bullet-text">Restaurant Story & Heritage</div>
+                        </div>
+                        <div class="bullet-item">
+                            <div class="bullet-icon"><i class="fa-solid fa-check"></i></div>
+                            <div class="bullet-text">Chef-Driven Mission</div>
+                        </div>
+                        <div class="bullet-item">
+                            <div class="bullet-icon"><i class="fa-solid fa-check"></i></div>
+                            <div class="bullet-text">Ultra-Fresh Organic Produce</div>
+                        </div>
+                        <div class="bullet-item">
+                            <div class="bullet-icon"><i class="fa-solid fa-check"></i></div>
+                            <div class="bullet-text">100% Customer Satisfaction</div>
+                        </div>
+                        <div class="bullet-item">
+                            <div class="bullet-icon"><i class="fa-solid fa-check"></i></div>
+                            <div class="bullet-text">Warm Family Atmosphere</div>
+                        </div>
+                        <div class="bullet-item">
+                            <div class="bullet-icon"><i class="fa-solid fa-check"></i></div>
+                            <div class="bullet-text">Award-Winning Culinary Artists</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#reservation" class="btn-gold">Book a Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Gallery Section (Pinterest Masonry Grid) -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-title-wrapper reveal">
+                <span class="section-subtitle">Visual Experience</span>
+                <h2 class="section-title">Our Culinary Gallery</h2>
+            </div>
+            
+            <div class="gallery-filters reveal">
+                <button class="filter-btn active" data-filter="all">All Dishes</button>
+                <button class="filter-btn" data-filter="pizza">Pizza</button>
+                <button class="filter-btn" data-filter="burgers">Burgers</button>
+                <button class="filter-btn" data-filter="bbq">BBQ</button>
+                <button class="filter-btn" data-filter="interior">Interior</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+                <button class="filter-btn" data-filter="drinks">Drinks</button>
+            </div>
+            
+            <div class="gallery-grid reveal-scale">
+                <!-- Gallery 1: Pizza -->
+                <div class="gallery-item" data-category="pizza">
+                    <div class="gallery-img-wrapper">
+                        <img class="gallery-img" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80" alt="Wood-fired Truffle Pizza">
+                    </div>
+                    <div class="gallery-info">
+                        <span class="gallery-tag">Pizza</span>
+                        <h4 class="gallery-title">Gourmet Sourdough Pizza</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery 2: Burgers -->
+                <div class="gallery-item" data-category="burgers">
+                    <div class="gallery-img-wrapper">
+                        <img class="gallery-img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" alt="Premium Angus Burger">
+                    </div>
+                    <div class="gallery-info">
+                        <span class="gallery-tag">Burgers</span>
+                        <h4 class="gallery-title">Smoked Angus Beef Burger</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery 3: BBQ -->
+                <div class="gallery-item" data-category="bbq">
+                    <div class="gallery-img-wrapper">
+                        <img class="gallery-img" src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="Skewered Spicy Kababs">
+                    </div>
+                    <div class="gallery-info">
+                        <span class="gallery-tag">BBQ</span>
+                        <h4 class="gallery-title">Sizzling Charcoal BBQ Skewers</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery 4: Interior -->
+                <div class="gallery-item" data-category="interior">
+                    <div class="gallery-img-wrapper">
+                        <img class="gallery-img" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Restaurant Interior Design">
+                    </div>
+                    <div class="gallery-info">
+                        <span class="gallery-tag">Interior</span>
+                        <h4 class="gallery-title">Luxury Fine Dining Hall</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery 5: Desserts -->
+                <div class="gallery-item" data-category="desserts">
+                    <div class="gallery-img-wrapper">
+                        <img class="gallery-img" src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80" alt="Premium Melted Lava Cake">
+                    </div>
+                    <div class="gallery-info">
+                        <span class="gallery-tag">Desserts</span>
+                        <h4 class="gallery-title">Molten Chocolate Lava Cake</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery 6: Drinks -->
+                <div class="gallery-item" data-category="drinks">
+                    <div class="gallery-img-wrapper">
+                        <img class="gallery-img" src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80" alt="Luxury Mocktails and Cocktails">
+                    </div>
+                    <div class="gallery-info">
+                        <span class="gallery-tag">Drinks</span>
+                        <h4 class="gallery-title">Signature Mint Citrus Mocktail</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Customer Reviews Section (Slider) -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-title-wrapper reveal">
+                <span class="section-subtitle">Testimonials</span>
+                <h2 class="section-title">What Our Guests Say</h2>
+            </div>
+            
+            <div class="slider-container reveal-scale">
+                <div class="testimonial-track" id="testimonial-track">
+                    <!-- Review 1 -->
+                    <div class="testimonial-card">
+                        <img class="customer-photo" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Sophia Malik">
+                        <h4 class="customer-name">Sophia Malik</h4>
+                        <div class="customer-role">Food Critic</div>
+                        <div class="stars-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            Anaya Restaurant provides the best luxury dining experience in town. The steak was cooked to absolute perfection, and the gold-themed presentation blew me away. 10/10 recommended!
+                        </p>
+                    </div>
+                    
+                    <!-- Review 2 -->
+                    <div class="testimonial-card">
+                        <img class="customer-photo" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Daniyal Ahmed">
+                        <h4 class="customer-name">Daniyal Ahmed</h4>
+                        <div class="customer-role">Loyal Customer</div>
+                        <div class="stars-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            The buy-one-get-one pizza deal is amazing, but their hygienic kitchen standard and extremely polite service are what keep my family coming back every single week.
+                        </p>
+                    </div>
+                    
+                    <!-- Review 3 -->
+                    <div class="testimonial-card">
+                        <img class="customer-photo" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Alia Khan">
+                        <h4 class="customer-name">Alia Khan</h4>
+                        <div class="customer-role">Lifestyle Vlogger</div>
+                        <div class="stars-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            Perfect lightning, high-end aesthetics, and delicious mocktails! The molten lava cake was so rich and perfect for my Instagram feed. The service was top notch!
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Slider buttons -->
+                <button class="slider-btn prev-btn" id="prev-btn" aria-label="Previous Review">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn next-btn" id="next-btn" aria-label="Next Review">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                
+                <div class="slider-dots" id="slider-dots">
+                    <!-- Dots generated dynamically via JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Reservation Form Section -->
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <div class="reserve-wrapper">
+                <div class="reserve-info-col reveal-left">
+                    <span class="section-subtitle">Secure A Table</span>
+                    <h3>Make A Reservation</h3>
+                    <p>
+                        Avoid waiting in lines! Reserve your private dining table or premium family lounge instantly online. Experience customized hospitality.
+                    </p>
+                    <div class="reserve-highlight-box">
+                        <h4>Need A Private Event?</h4>
+                        <p>For custom catering, birthdays, corporate lunches, or private reservations, call our booking desk directly at +92 300 1234567.</p>
+                    </div>
+                </div>
+                
+                <div class="reserve-form-col glass-panel reveal-right">
+                    <form class="reserve-form" id="reservation-form">
+                        <!-- Name -->
+                        <div class="form-group">
+                            <label class="form-label" for="res-name">Your Name</label>
+                            <input type="text" id="res-name" class="form-control" placeholder="Enter Full Name" required>
+                        </div>
+                        
+                        <!-- Phone -->
+                        <div class="form-group">
+                            <label class="form-label" for="res-phone">Phone Number</label>
+                            <input type="tel" id="res-phone" class="form-control" placeholder="e.g. +923001234567" required>
+                        </div>
+                        
+                        <!-- Date -->
+                        <div class="form-group">
+                            <label class="form-label" for="res-date">Reservation Date</label>
+                            <input type="date" id="res-date" class="form-control" required>
+                        </div>
+                        
+                        <!-- Time -->
+                        <div class="form-group">
+                            <label class="form-label" for="res-time">Select Time Slot</label>
+                            <select id="res-time" class="form-control" required>
+                                <option value="" disabled selected>Select Time Slot</option>
+                                <option value="12:00 PM">12:00 PM (Lunch)</option>
+                                <option value="1:30 PM">1:30 PM (Lunch)</option>
+                                <option value="3:00 PM">3:00 PM (Lunch)</option>
+                                <option value="6:00 PM">6:00 PM (Dinner)</option>
+                                <option value="7:30 PM">7:30 PM (Dinner)</option>
+                                <option value="9:00 PM">9:00 PM (Dinner)</option>
+                                <option value="10:30 PM">10:30 PM (Late Night)</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Guests -->
+                        <div class="form-group full-width">
+                            <label class="form-label" for="res-guests">Number of Guests</label>
+                            <select id="res-guests" class="form-control" required>
+                                <option value="" disabled selected>Number of Guests</option>
+                                <option value="1-2">1 to 2 Persons</option>
+                                <option value="3-4">3 to 4 Persons</option>
+                                <option value="5-6">5 to 6 Persons</option>
+                                <option value="7+">7+ Persons (Lounge Required)</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn-gold">
+                            <i class="fa-regular fa-calendar-check"></i> Reserve Table
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Success Confirmation Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="success-modal glass-panel">
+            <div class="modal-icon">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="modal-title">Table Reserved!</h3>
+            <p class="modal-message" id="modal-message">
+                Thank you for your reservation. A confirmation details SMS and email have been sent to you. We look forward to hosting you.
+            </p>
+            <button class="btn-gold" onclick="document.getElementById('modal-overlay').classList.remove('active');">
+                Great, Thank You
+            </button>
+        </div>
+    </div>
+
+    <!-- 10. Contact Details & Google Maps -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title-wrapper reveal">
+                <span class="section-subtitle">Find Us</span>
+                <h2 class="section-title">Contact & Location</h2>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-details-col reveal-left">
+                    <!-- Address -->
+                    <div class="contact-item glass-panel">
+                        <div class="contact-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <div class="contact-content">
+                            <h4>Address</h4>
+                            <p>79-A Farid Town Road, Canal Colony, Sahiwal, Pakistan</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Phone -->
+                    <div class="contact-item glass-panel">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-content">
+                            <h4>Call Booking Desk</h4>
+                            <p><a href="tel:+92404227626">+92 40 4227626</a></p>
+                        </div>
+                    </div>
+                    
+                    <!-- WhatsApp -->
+                    <div class="contact-item glass-panel">
+                        <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div class="contact-content">
+                            <h4>WhatsApp Online Support</h4>
+                            <p><a href="https://wa.me/923001234567" target="_blank">+92 300 1234567</a></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Email -->
+                    <div class="contact-item glass-panel">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-content">
+                            <h4>Email Us</h4>
+                            <p><a href="mailto:info@anayarestaurant.com">info@anayarestaurant.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Opening Hours -->
+                    <div class="contact-item glass-panel">
+                        <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div class="contact-content">
+                            <h4>Opening Hours</h4>
+                            <p>Monday - Thursday: 12:00 PM - 11:30 PM<br>Friday - Sunday: 12:00 PM - 12:30 AM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Google Maps Frame -->
+                <div class="map-col reveal-right">
+                    <!-- Custom styled Google Map for Canal Colony Sahiwal area -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.908075306915!2d73.09054737526367!3d30.664722888934524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1m3!2m2!1d73.0931223!2d30.6647229!5e0!3m2!1sen!2spk!4v1700000000000!5m2!1sen!2spk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Floating WhatsApp Button (Always Visible) -->
+    <a href="https://wa.me/923001234567?text=Hi%20Anaya%20Restaurant,%20I%20would%20like%20to%20reserve%20a%20table." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp" id="whatsapp-float">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- 12. Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">ANAYA<span>RESTAURANT</span></a>
+                    <p>Where passion meets precision in luxury fine dining. Delivering unforgettable culinary art and top-tier hospitality for over a decade.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/anayarestaurant_/" target="_blank" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="social-icon" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-links-title">Quick Links</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#why-choose-us">Why Us</a></li>
+                        <li><a href="#deals">Special Deals</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#gallery">Culinary Gallery</a></li>
+                        <li><a href="#reservation">Book Table</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-links-title">Support</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#contact">Location Map</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4 class="footer-links-title">Newsletter</h4>
+                    <p>Subscribe to receive secret discount offers, menu items, and private VIP events schedules.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                        <input type="email" class="form-control" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn-gold"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Anaya Restaurant. All Rights Reserved. Designed for premium pitch demo.</p>
+                <p>Canal Colony, Farid Town, Sahiwal, Pakistan</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript For Interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>
