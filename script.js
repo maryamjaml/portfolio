@@ -254,6 +254,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 src: 'fitnesstrackervideo.mp4',
                 title: 'Fitness Tracker Pro App',
                 description: 'A professional mobile fitness tracking experience showcasing calorie monitoring, active logs, and custom widgets.'
+            },
+            busify: {
+                src: 'media2.mp4',
+                title: 'Busify - Bus Booking & Reservation System',
+                description: 'A modern and intuitive online bus reservation and ticket booking platform designed for effortless route selection, schedule management, and travel tracking.'
+            },
+            restaurant: {
+                src: 'restaurent.mp4',
+                title: 'Restaurant Website',
+                description: 'A modern and responsive restaurant website showcasing menus, reservation options, and engaging user experience.'
             }
         };
 
